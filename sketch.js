@@ -20,11 +20,12 @@ function setup() {
 
 	//Create the Bodies Here.
 	// Creating Hammer
-	hammer1 = new hammer(100, 100, 10, 5, {'density':2, 'friction':1.0, 'restitution':0.5});
+	hammer1 = new hammer(10, 100);
 	World.add(world, hammer1);
 	
 	// Creating Stone
-	stone1 = new stone(height/2+200, 150, 20, 60, {'density':5.0, 'friction':1.0, 'restitution':0.4});
+	
+	stone1 = new stone(height/2+200, 150, 50, 50, {'density':5.0, 'friction':1.0, 'restitution':0.4});
 	World.add(world, stone1);
 	
 	// Creating Ball
@@ -37,23 +38,18 @@ function setup() {
 	World.add(world, iron1);
 	
 	// Creating Sand 
-	for(var i = 0; i<6; i++)
+	for(var i = 0; i<2; i=i+1)
 	{
+		
 		sand1 = new sand(height/2+320, 20, 20, {'density':0.2, 'friction':3, 'restitution':0.5});
+		World.add(world, sand1);
 	}
-	World.add(world, sand1);
 	// This^ line is not working___________________________________________ 
 	
 	// Creating Ground
 	ground1 = new ground(height/2+150, 580, 900, 15, {"isStatic" : true});
 	World.add(world, ground1);
 	
-	// hammer = createSprite(100, 100, 50, 50);
-	
-	
-	
-	// hammer = Bodies.rectangle(100, 100, 100, 15, {'restitution' : 0.8});
-	// World.add(world, hammer);
 	Engine.run(engine);
 	
 }
@@ -79,8 +75,3 @@ function draw() {
 	// rect(100, 100, 100, 15);  
 	// drawSprites();
 }
-
-
-
-
-
