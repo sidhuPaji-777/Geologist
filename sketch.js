@@ -38,7 +38,7 @@ function setup() {
 	World.add(world, iron1);
 	
 	// Creating Sand 
-	for(var i = 0; i<2; i=i+1)
+	for(var i = 0; i<6; i=i+1)
 	{
 		
 		sand1 = new sand(height/2+320, 20, 20, {'density':0.2, 'friction':3, 'restitution':0.5});
