@@ -9,7 +9,7 @@ class stone
         this.width=width;
         this.height=height;
 
-        this.image = loadImage("sprites/Stone.png");
+//         this.image = loadImage("sprites/Stone.png");
 
     }
     
