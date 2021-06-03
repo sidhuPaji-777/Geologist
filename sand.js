@@ -14,8 +14,12 @@ class sand
         var pos=this.body.position;
         ellipseMode(CENTER);
         ellipse(pos.x ,pos.y+6, this.radius);
-        // this.positionX = mouseX;
-        // this.positionX = mouseX;
+
+        var angle = this.body.angle;
+        push();
+        translate(this.body.position.x, this.body.position.y);
+        rotate(angle);
+        pop();
     }
 
 }
