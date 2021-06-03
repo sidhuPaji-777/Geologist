@@ -17,16 +17,15 @@ class stone
     {
         var pos=this.body.position;
         rectMode(CENTER);
-        rect(pos.x,pos.y,this.width,this.height);    
-        this.positionX = mouseX;
-        this.positionX = mouseX;
-
-        // var angle = this.body.angle;
+        rect(pos.x,pos.y,this.width,this.height);   
+        strokeWeight(3);
+        // stroke("yellow");
+        // fill("black");
         push();
-        translate(this.body.position.x, this.body.position.y);
+        translate(pos.x, pos.y);
         // rotate(angle);
-        imageMode(CENTER);
-        image(this.image, -40, 0, 150, 70);
+        // imageMode(CENTER);
+        // image(this.image, -40, 0, 150, 70);
         pop();
     }
 
