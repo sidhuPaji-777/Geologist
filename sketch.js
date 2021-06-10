@@ -37,13 +37,22 @@ function setup() {
 	iron1 = new iron(100, 100, 60, 35, {'density':8, 'friction':1.0, 'restitution':0.5});
 	World.add(world, iron1);
 	
-	// Creating Sand 
-	for(var i = 0; i<6; i=i+1)
-	{
+	// Creating Sands
 		
-		sand1 = new sand(height/2+320, 20, 20, {'density':0.2, 'friction':3, 'restitution':0.5});
-		World.add(world, sand1);
-	}
+	sand1 = new sand(height/2+300, 20, 15, {'density':0.2, 'friction':3, 'restitution':0.5});
+	World.add(world, sand1);
+		
+	sand2 = new sand(height/2+320, 20, 15, {'density':0.2, 'friction':3, 'restitution':0.5});
+	World.add(world, sand2);
+
+	sand3 = new sand(height/2+320, 20, 15, {'density':0.2, 'friction':3, 'restitution':0.5});
+	World.add(world, sand3);
+
+	sand4 = new sand(height/2+320, 20, 15, {'density':0.2, 'friction':3, 'restitution':0.5});
+	World.add(world, sand4);
+
+	sand5 = new sand(height/2+320, 20, 15, {'density':0.2, 'friction':3, 'restitution':0.5});
+	World.add(world, sand5);
 	// This^ line is not working___________________________________________ 
 	
 	// Creating Ground
@@ -69,6 +78,10 @@ function draw() {
 	
 	iron1.display();
 	sand1.display();
+	sand2.display();
+	sand3.display();
+	sand4.display();
+	sand5.display();
 	
 	ground1.display();
 	
